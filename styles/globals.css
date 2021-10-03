@@ -8,6 +8,12 @@
     src:  url("../public/fonts/TTCommonsLight.otf") format("openType");
     font-weight: 300
 }
+
+@font-face {
+    font-family: "TT Commons";
+    src:  url("../public/fonts/TTCommonsMedium.otf") format("openType");
+    font-weight: 500
+}
 @font-face {
     font-family: "TT Commons";
     src: 
@@ -15,7 +21,7 @@
    
 }
   
-  div {
+  div, p {
     font-family: "TT Commons", sans-serif;
   }
 @tailwind base;

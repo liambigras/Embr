@@ -8,14 +8,14 @@ const NavbarItems = () => {
             <div className='border-b-2 border-embrOrange'>
                 <a href=''>Why Embr</a>
             </div>
-            <div className='pl-5'>
+            <div className='sm:pl-5'>
                 <a href='' className='focus:border-b-2 border-embrOrange'>Presale</a>
             </div>
             
-            <a href='' className='pl-5 '>Products</a>
-            <a href='' className='pl-5'>Team</a>
-            <a href='' className='pl-5'>Contact</a>
-            <a href='' className='pl-5 text-embrOrange'>Check eligibility</a>
+            <a href='' className='sm:pl-5 '>Products</a>
+            <a href='' className='sm:pl-5'>Team</a>
+            <a href='' className='sm:pl-5'>Contact</a>
+            <a href='' className='sm:pl-5 text-embrOrange'>Check eligibility</a>
         </div>
     )
 }

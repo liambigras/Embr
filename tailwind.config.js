@@ -2,31 +2,17 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    backgroundColor: theme => ({
-      'customBlue': '#364361',
-      'customWarning': '#D3423D',
-      'embrOrange': '#ff7900',
-      'embrWhite': '#fffcf9'
+    gradientColorStops: theme => ({
+      ...theme('colors'),
+      'yellowishOrange' : '#FFC200',
+      'orange': '#FF7900'
      }),
      textColor: {
       'embrBlack': '#313131',
-      'embrWhite': '#fffcf9',
+      'embrWhite': '#fffbf9',
       'embrOrange': '#ff7900',
     },
-    fontSize: {
-      'xs': '11px',
-      'sm': '12px',
-      'tiny': '.875rem',
-      'base': '1rem',
-      'lg': '1.125rem',
-      'xl': '1.25rem',
-      '2xl': '1.5rem',
-     '3xl': '1.875rem',
-     '4xl': '2.25rem',
-      '5xl': '3rem',
-      '6xl': '4rem',
-     '7xl': '5rem',
-    },
+   
     borderColor: theme => ({
       'embrWhite': '#fffcf9',
       'embrOrange': '#ff7900',
@@ -35,8 +21,30 @@ module.exports = {
      
     extend: {
       width: {
-        '88': '22rem'
-      }
+        '88': '22rem',
+        '320' : '320px',
+        '420' : '420px',
+        '481' : '481px',
+        '547':'547px'
+      },
+      fontSize: {
+        '14': '14px',
+        '16': '16px',
+        '22': '22px',
+        '40': '40px',
+        'tiny': '.875rem',
+      },
+      backgroundColor: theme => ({
+        'customBlue': '#364361',
+        'blueishCard': '#445B6A',
+        'customWarning': '#D3423D',
+        'embrOrange': '#ff7900',
+        'embrWhite': '#fffcf9',
+        'redOxyde': '#B23028'
+       }),
+       padding: {
+         'xs' : '1.75px'
+       },
     },
   },
   variants: {
