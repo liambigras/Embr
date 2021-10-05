@@ -5,7 +5,9 @@ module.exports = {
     gradientColorStops: theme => ({
       ...theme('colors'),
       'yellowishOrange' : '#FFC200',
-      'orange': '#FF7900'
+      'orange': '#FF7900',
+      'customBlue': '#1A3D54',
+        'customGrey': '#2A3E4B',
      }),
      textColor: {
       'embrBlack': '#313131',
@@ -35,7 +37,8 @@ module.exports = {
         'tiny': '.875rem',
       },
       backgroundColor: theme => ({
-        'customBlue': '#364361',
+        'customBlue': '#1A3D54',
+        'customGrey': '#2A3E4B',
         'blueishCard': '#445B6A',
         'customWarning': '#D3423D',
         'embrOrange': '#ff7900',
@@ -43,7 +46,8 @@ module.exports = {
         'redOxyde': '#B23028'
        }),
        padding: {
-         'xs' : '1.75px'
+         'xs' : '1.75px',
+         'sm' : '2px'
        },
     },
   },

@@ -1,5 +1,11 @@
 @font-face {
     font-family: "TT Commons";
+    src:  url("../public/fonts/TTCommonsThin.otf") format("openType");
+    font-weight: 100
+}
+
+@font-face {
+    font-family: "TT Commons";
     src:  url("../public/fonts/TTCommonsExtraLight.otf") format("openType");
     font-weight: 200
 }
@@ -14,6 +20,19 @@
     src:  url("../public/fonts/TTCommonsMedium.otf") format("openType");
     font-weight: 500
 }
+
+@font-face {
+    font-family: "TT Commons";
+    src:  url("../public/fonts/TTCommonsBold.otf") format("openType");
+    font-weight: 700
+}
+
+@font-face {
+    font-family: "TT Commons";
+    src:  url("../public/fonts/TTCommonsBlack.otf") format("openType");
+    font-weight: 900
+}
+
 @font-face {
     font-family: "TT Commons";
     src: 

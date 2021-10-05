@@ -25,10 +25,10 @@ const EligibilityCheckerPage = () => {
             <div className='pt-4'>
                 <p className='text-sm tracking-wide opacity-90 pb-1'>Your wallet address</p>
                 <div className='flex w-full h-10'>
-                    <input className='rounded-md w-320 text-16 text-embrBlack pl-1 font-medium'  placeholder='0x295e26495CEF6F69dFA69911d9D8e4F3bB'></input>
-                    <div className='w-auto ml-2 pl-5 pr-5 pt-2 rounded-md bg-embrOrange text-16 font-medium'><a href=''>Check</a></div>
+                    <input className='rounded-md w-320 text-16 text-embrBlack pl-2 font-medium'  placeholder='0x295e26495CEF6F69dFA69911d9D8e4F3bB'></input>
+                    <div className='ml-4 pl-6 pr-6 pt-2 rounded-md bg-embrOrange text-16 font-medium'><a href=''>Check</a></div>
                 </div>
-                <div className='w-full  bg-blueishCard bg-opacity-40 mt-5 p-2 sm:p-5 text-16 opacity-80 rounded-2xl tracking-normal font-medium leading-5'>
+                <div className='w-full  bg-blueishCard bg-opacity-40 mt-5 p-2 sm:p-5 text-16 opacity-80 rounded-2xl tracking-normal font-normal leading-5'>
                   <p>If your contract address is deemed ineligible for our private pre-sale and you feel this is in error; Please <a href='' className='text-embrOrange underline'>contact us</a> to discuss or join us during our public pre-sale.</p>
                 </div>
             </div>
