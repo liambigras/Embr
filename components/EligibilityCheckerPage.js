@@ -2,6 +2,42 @@ import RightArrowWhite from '../public/rightarrowWhite.svg'
 import RightArrowOrange from '../public/rightarrowOrange.svg'
 
 const EligibilityCheckerPage = () => {
+
+  const clear = () => {
+    let eligible = document.getElementById('eligible');
+    let noteligible = document.getElementById('noteligible');
+
+    eligible.setAttribute('class', 'hidden');
+    noteligible.setAttribute('class', 'hidden')
+  }
+  const validateAddress = async() => {
+    //validate ok bsc address
+    clear();
+    let address = document.getElementById('addressInput');
+    let eligible = document.getElementById('eligible');
+    let noteligible = document.getElementById('noteligible');
+
+    if(address.value.length > 0){
+      console.log(address.value);
+      const res = await fetch('api/validate', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(address.value)
+      })
+      const data = await res.json();
+      if(data.inWhitelist){
+        eligible.setAttribute('class', 'block text-green-500')
+      }else{
+        noteligible.setAttribute('class', 'block text-red-500')
+      }
+    }else{
+      console.log("Must be a valid address!");
+    }
+    
+  }
+
     return (
         <div className='sm:flex justify-center text-embrWhite '>
         <div className='ml-5 sm:ml-0 sm:w-547 mt-20 '>
@@ -25,8 +61,12 @@ const EligibilityCheckerPage = () => {
             <div className='pt-4'>
                 <p className='text-sm tracking-wide opacity-90 pb-1'>Your wallet address</p>
                 <div className='flex w-full h-10'>
-                    <input className='rounded-md w-320 text-16 text-embrBlack pl-2 font-medium'  placeholder='0x295e26495CEF6F69dFA69911d9D8e4F3bB'></input>
-                    <div className='ml-4 pl-6 pr-6 pt-2 rounded-md bg-embrOrange text-16 font-medium'><a href=''>Check</a></div>
+                    <input id='addressInput' className='rounded-md w-320 text-16 text-embrBlack pl-2 font-medium'  placeholder='0x295e26495CEF6F69dFA69911d9D8e4F3bB'></input>
+                    <div className='ml-4 pl-6 pr-6 pt-2 rounded-md bg-embrOrange text-16 font-medium' onClick={e => validateAddress()}><a >Check</a></div>
+                </div>
+                <div>
+                  <p id='eligible' className='hidden'>Your wallet address is eligible</p>
+                  <p id='noteligible' className='hidden'>Your wallet address is not eligible</p>
                 </div>
                 <div className='w-full  bg-blueishCard bg-opacity-40 mt-5 p-2 sm:p-5 text-16 opacity-80 rounded-2xl tracking-normal font-normal leading-5'>
                   <p>If your contract address is deemed ineligible for our private pre-sale and you feel this is in error; Please <a href='' className='text-embrOrange underline'>contact us</a> to discuss or join us during our public pre-sale.</p>
@@ -34,6 +74,7 @@ const EligibilityCheckerPage = () => {
             </div>
         </div>
         </div>
+        
       </div>
     )
 };

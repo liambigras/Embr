@@ -9,11 +9,7 @@ module.exports = {
       'customBlue': '#1A3D54',
         'customGrey': '#2A3E4B',
      }),
-     textColor: {
-      'embrBlack': '#313131',
-      'embrWhite': '#fffbf9',
-      'embrOrange': '#ff7900',
-    },
+     
    
     borderColor: theme => ({
       'embrWhite': '#fffcf9',
@@ -29,6 +25,9 @@ module.exports = {
         '481' : '481px',
         '547':'547px'
       },
+      height: {
+        '100': '100px'
+      },
       fontSize: {
         '14': '14px',
         '16': '16px',
@@ -36,9 +35,11 @@ module.exports = {
         '40': '40px',
         'tiny': '.875rem',
       },
+     
       backgroundColor: theme => ({
         'customBlue': '#1A3D54',
         'customGrey': '#2A3E4B',
+        'embrLightOrange': '#FF9100',
         'blueishCard': '#445B6A',
         'customWarning': '#D3423D',
         'embrOrange': '#ff7900',
@@ -49,6 +50,11 @@ module.exports = {
          'xs' : '1.75px',
          'sm' : '2px'
        },
+       textColor: {
+        'embrBlack': '#313131',
+        'embrWhite': '#fffbf9',
+        'embrOrange': '#ff7900',
+      },
     },
   },
   variants: {
