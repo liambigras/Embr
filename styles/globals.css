@@ -23,6 +23,13 @@
 
 @font-face {
     font-family: "TT Commons";
+    src:  url("../public/fonts/TTCommonsDemiBold.otf") format("openType");
+    font-weight: 600
+}
+
+
+@font-face {
+    font-family: "TT Commons";
     src:  url("../public/fonts/TTCommonsBold.otf") format("openType");
     font-weight: 700
 }
