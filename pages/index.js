@@ -39,12 +39,12 @@ export default function Home() {
         <CertikBanner />
         <div className="sm:flex justify-center bg-greywhite w-full h-auto pb-40">
           <div className="sm:w-600 pt-20 mr-5">
-            <div className='font-semibold text-darkRed text-40 leading-9'>
+            <div className='font-semibold text-darkRed text-40 leading-9 tracking-tight'>
               <div className='flex'>
               <p className="">
               The &nbsp;
             </p>
-            <p className='row border-b-4 -mb-1 border-embrOrange'> Embr Protocol </p>
+            <p className=' -mb-1 underline underline-embrOrange underline-offset-small'> Embr Protocol </p>
             <p> &nbsp; is a community </p>
               </div>
               <div className='flex'>

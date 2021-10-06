@@ -18,6 +18,10 @@ module.exports = {
      }),
      
     extend: {
+      colors: {
+        'embrOrange': '#ff7900',
+        green: 'green',
+      },
       width: {
         '88': '22rem',
         '146': '146px',
@@ -76,11 +80,15 @@ module.exports = {
       },
       inset: {
         '18' : '4.5rem'
+      },
+      underlineOffset: {
+        'small': '-2px',
+        'medium': '5px',
       }
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('tailwind-underline-utils')],
 }
