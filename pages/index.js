@@ -25,7 +25,7 @@ export default function Home() {
         ></link>
       </Head>
 
-      <main className="">
+      <main className="w-full">
         <div className="bg-gradient-to-r from-customGrey to-customBlue pb-20">
           <div className="block  h-10">
             <Banner />
